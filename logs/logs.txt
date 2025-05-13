@@ -1,0 +1,552 @@
+$ python test.py
+Pipelines in DB:
+[
+    "Test-env"
+]
+First Pipeline: Test-env
+Executions List for Test-env:
+[
+    "Prepare_d47e",
+    "Prepare_4af4",
+    "Featurize_dd47",
+    "Train_ef85",
+    "Evaluate_f9ef"
+]
+Executions for Test-env:
+{
+    "total_items": 5,
+    "items": [
+        {
+            "Context_ID": 2,
+            "Context_Type": "Test-env/Prepare",
+            "Execution": "['src/parse.py', 'artifacts/data.xml.gz', 'artifacts/parsed']",
+            "Execution_type_name": "Test-env/Prepare",
+            "Execution_uuid": "4af49cc4-099b-11f0-bc3f-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "da4d3c53bcd21d89dce356b3d73e672cd1bc108c",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": null,
+            "custom_properties_max_features": null,
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_ngrams": null,
+            "custom_properties_original_create_time_since_epoch": 1742922303055,
+            "custom_properties_seed": 20170428.0,
+            "custom_properties_split": 0.2
+        },
+        {
+            "Context_ID": 2,
+            "Context_Type": "Test-env/Prepare",
+            "Execution": "['src/parse.py', 'artifacts/data.xml.gz', 'artifacts/parsed']",
+            "Execution_type_name": "Test-env/Prepare",
+            "Execution_uuid": "d47e902e-0998-11f0-8398-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "cc73a7bef1b214e26fee7e04af9b85f53820b7fd",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_max_features": null,
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_ngrams": null,
+            "custom_properties_original_create_time_since_epoch": 1742921245318,
+            "custom_properties_seed": 20170428.0,
+            "custom_properties_split": "0.2"
+        },
+        {
+            "Context_ID": 3,
+            "Context_Type": "Test-env/Featurize",
+            "Execution": "['src/featurize.py', 'artifacts/parsed', 'artifacts/features']",
+            "Execution_type_name": "Test-env/Featurize",
+            "Execution_uuid": "dd477fb8-0998-11f0-86a8-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "2e5dd98811f5cd21d5789ad77f3836e0a43dbbb4",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_max_features": 3000.0,
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_ngrams": 2.0,
+            "custom_properties_original_create_time_since_epoch": 1742921260056,
+            "custom_properties_seed": null,
+            "custom_properties_split": null
+        },
+        {
+            "Context_ID": 4,
+            "Context_Type": "Test-env/Train",
+            "Execution": "['src/train.py', 'artifacts/features', 'artifacts/model']",
+            "Execution_type_name": "Test-env/Train",
+            "Execution_uuid": "ef85ce0a-0998-11f0-925c-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "7c62079faec76c1f674e4717879e976abe9b9967",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_max_features": null,
+            "custom_properties_min_split": 64.0,
+            "custom_properties_n_est": 100.0,
+            "custom_properties_ngrams": null,
+            "custom_properties_original_create_time_since_epoch": 1742921290664,
+            "custom_properties_seed": 20170428.0,
+            "custom_properties_split": null
+        },
+        {
+            "Context_ID": 5,
+            "Context_Type": "Test-env/Evaluate",
+            "Execution": "['src/test.py', 'artifacts/model', 'artifacts/features', 'artifacts/test_results']",
+            "Execution_type_name": "Test-env/Evaluate",
+            "Execution_uuid": "f9efc45e-0998-11f0-aec0-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "1bd3f674c8d9bc6da4e713051ec16aefb4db9a5e",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_max_features": null,
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_ngrams": null,
+            "custom_properties_original_create_time_since_epoch": 1742921308136,
+            "custom_properties_seed": null,
+            "custom_properties_split": null
+        }
+    ]
+}
+Artifact Types in DB:
+[
+    "Dataset",
+    "Step_Metrics",
+    "Model",
+    "Metrics"
+]
+First Artifact Type: Dataset
+Artifacts for Test-env of type Dataset:
+{
+    "total_items": 5,
+    "items": [
+        {
+            "Commit": "236d9502e0283d91f689d7038b8508a2",
+            "create_time_since_epoch": 1742922387923,
+            "custom_properties_original_create_time_since_epoch": 1742921251806,
+            "custom_properties_user-metadata1": "metadata_value",
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 2,
+            "last_update_time_since_epoch": 1742922387923,
+            "name": "artifacts/data.xml.gz",
+            "type": "Dataset",
+            "uri": "236d9502e0283d91f689d7038b8508a2",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/23/6d9502e0283d91f689d7038b8508a2",
+            "execution_type_name": "Test-env/Prepare"
+        },
+        {
+            "Commit": "32b715ef0d71ff4c9e61f55b09c15e75",
+            "create_time_since_epoch": 1742922387929,
+            "custom_properties_original_create_time_since_epoch": 1742921256122,
+            "custom_properties_user-metadata1": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 3,
+            "last_update_time_since_epoch": 1742922387929,
+            "name": "artifacts/parsed/train.tsv",
+            "type": "Dataset",
+            "uri": "32b715ef0d71ff4c9e61f55b09c15e75",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/32/b715ef0d71ff4c9e61f55b09c15e75",
+            "execution_type_name": "Test-env/Prepare,\n Test-env/Featurize"
+        },
+        {
+            "Commit": "6f597d341ceb7d8fbbe88859a892ef81",
+            "create_time_since_epoch": 1742922387936,
+            "custom_properties_original_create_time_since_epoch": 1742921257223,
+            "custom_properties_user-metadata1": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 4,
+            "last_update_time_since_epoch": 1742922387936,
+            "name": "artifacts/parsed/test.tsv",
+            "type": "Dataset",
+            "uri": "6f597d341ceb7d8fbbe88859a892ef81",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/6f/597d341ceb7d8fbbe88859a892ef81",
+            "execution_type_name": "Test-env/Prepare,\n Test-env/Featurize"
+        },
+        {
+            "Commit": "f0df2c2523f036b3acbed38e0b9f6baf",
+            "create_time_since_epoch": 1742922387967,
+            "custom_properties_original_create_time_since_epoch": 1742921286119,
+            "custom_properties_user-metadata1": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 5,
+            "last_update_time_since_epoch": 1742922387967,
+            "name": "artifacts/features/train.pkl",
+            "type": "Dataset",
+            "uri": "f0df2c2523f036b3acbed38e0b9f6baf",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/f0/df2c2523f036b3acbed38e0b9f6baf",
+            "execution_type_name": "Test-env/Prepare,\n Test-env/Featurize,\n Test-env/Train"
+        },
+        {
+            "Commit": "b0b1541826abc7c82d2d3dd9b3a614db",
+            "create_time_since_epoch": 1742922387973,
+            "custom_properties_original_create_time_since_epoch": 1742921287388,
+            "custom_properties_user-metadata1": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 6,
+            "last_update_time_since_epoch": 1742922387973,
+            "name": "artifacts/features/test.pkl",
+            "type": "Dataset",
+            "uri": "b0b1541826abc7c82d2d3dd9b3a614db",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/b0/b1541826abc7c82d2d3dd9b3a614db",
+            "execution_type_name": "Test-env/Prepare,\n Test-env/Featurize,\n Test-env/Train,\n Test-env/Evaluate"
+        }
+    ]
+}
+Artifact Lineage Tree for Test-env:
+[
+    [
+        {
+            "id": "data.xml.gz:236d",
+            "parents": []
+        }
+    ],
+    [
+        {
+            "id": "train.tsv:32b7",
+            "parents": [
+                "data.xml.gz:236d"
+            ]
+        },
+        {
+            "id": "test.tsv:6f59",
+            "parents": [
+                "data.xml.gz:236d"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "train.pkl:f0df",
+            "parents": [
+                "train.tsv:32b7",
+                "test.tsv:6f59"
+            ]
+        },
+        {
+            "id": "test.pkl:b0b1",
+            "parents": [
+                "train.tsv:32b7",
+                "test.tsv:6f59"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "ef85ce0a-0998-11f0-925c-38eaa715aca4/metrics/training_metrics:2cc7:3:f744",
+            "parents": [
+                "train.pkl:f0df"
+            ]
+        },
+        {
+            "id": "model.pkl:a2d7",
+            "parents": [
+                "train.pkl:f0df"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "metrics:fef5:5",
+            "parents": [
+                "model.pkl:a2d7",
+                "test.pkl:b0b1"
+            ]
+        }
+    ]
+]
+Selected Execution UUID (First 4 characters): 4af4
+Execution Lineage Tree for UUID 4af4 and Pipeline Test-env:
+[
+    [
+        {
+            "id": "Prepare_4af4",
+            "parents": []
+        }
+    ]
+]
+(cmf-mcp) [tripataa@arl-df02 cmf_client]$ python test.py
+Pipelines in DB:
+[
+    "Test-env"
+]
+First Pipeline: Test-env
+Executions List for Test-env:
+[
+    "Prepare_d47e",
+    "Prepare_4af4",
+    "Featurize_dd47",
+    "Train_ef85",
+    "Evaluate_f9ef"
+]
+Executions for Test-env:
+{
+    "total_items": 5,
+    "items": [
+        {
+            "Context_ID": 2,
+            "Context_Type": "Test-env/Prepare",
+            "Execution": "['src/parse.py', 'artifacts/data.xml.gz', 'artifacts/parsed']",
+            "Execution_type_name": "Test-env/Prepare",
+            "Execution_uuid": "4af49cc4-099b-11f0-bc3f-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "da4d3c53bcd21d89dce356b3d73e672cd1bc108c",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": null,
+            "custom_properties_max_features": null,
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_ngrams": null,
+            "custom_properties_original_create_time_since_epoch": 1742922303055,
+            "custom_properties_seed": 20170428.0,
+            "custom_properties_split": 0.2
+        },
+        {
+            "Context_ID": 2,
+            "Context_Type": "Test-env/Prepare",
+            "Execution": "['src/parse.py', 'artifacts/data.xml.gz', 'artifacts/parsed']",
+            "Execution_type_name": "Test-env/Prepare",
+            "Execution_uuid": "d47e902e-0998-11f0-8398-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "cc73a7bef1b214e26fee7e04af9b85f53820b7fd",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_max_features": null,
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_ngrams": null,
+            "custom_properties_original_create_time_since_epoch": 1742921245318,
+            "custom_properties_seed": 20170428.0,
+            "custom_properties_split": "0.2"
+        },
+        {
+            "Context_ID": 3,
+            "Context_Type": "Test-env/Featurize",
+            "Execution": "['src/featurize.py', 'artifacts/parsed', 'artifacts/features']",
+            "Execution_type_name": "Test-env/Featurize",
+            "Execution_uuid": "dd477fb8-0998-11f0-86a8-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "2e5dd98811f5cd21d5789ad77f3836e0a43dbbb4",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_max_features": 3000.0,
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_ngrams": 2.0,
+            "custom_properties_original_create_time_since_epoch": 1742921260056,
+            "custom_properties_seed": null,
+            "custom_properties_split": null
+        },
+        {
+            "Context_ID": 4,
+            "Context_Type": "Test-env/Train",
+            "Execution": "['src/train.py', 'artifacts/features', 'artifacts/model']",
+            "Execution_type_name": "Test-env/Train",
+            "Execution_uuid": "ef85ce0a-0998-11f0-925c-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "7c62079faec76c1f674e4717879e976abe9b9967",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_max_features": null,
+            "custom_properties_min_split": 64.0,
+            "custom_properties_n_est": 100.0,
+            "custom_properties_ngrams": null,
+            "custom_properties_original_create_time_since_epoch": 1742921290664,
+            "custom_properties_seed": 20170428.0,
+            "custom_properties_split": null
+        },
+        {
+            "Context_ID": 5,
+            "Context_Type": "Test-env/Evaluate",
+            "Execution": "['src/test.py', 'artifacts/model', 'artifacts/features', 'artifacts/test_results']",
+            "Execution_type_name": "Test-env/Evaluate",
+            "Execution_uuid": "f9efc45e-0998-11f0-aec0-38eaa715aca4",
+            "Git_End_Commit": "",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Git_Start_Commit": "1bd3f674c8d9bc6da4e713051ec16aefb4db9a5e",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_max_features": null,
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_ngrams": null,
+            "custom_properties_original_create_time_since_epoch": 1742921308136,
+            "custom_properties_seed": null,
+            "custom_properties_split": null
+        }
+    ]
+}
+Artifact Types in DB:
+[
+    "Dataset",
+    "Step_Metrics",
+    "Model",
+    "Metrics"
+]
+First Artifact Type: Dataset
+Artifacts for Test-env of type Dataset:
+{
+    "total_items": 5,
+    "items": [
+        {
+            "Commit": "236d9502e0283d91f689d7038b8508a2",
+            "create_time_since_epoch": 1742922387923,
+            "custom_properties_original_create_time_since_epoch": 1742921251806,
+            "custom_properties_user-metadata1": "metadata_value",
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 2,
+            "last_update_time_since_epoch": 1742922387923,
+            "name": "artifacts/data.xml.gz",
+            "type": "Dataset",
+            "uri": "236d9502e0283d91f689d7038b8508a2",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/23/6d9502e0283d91f689d7038b8508a2",
+            "execution_type_name": "Test-env/Prepare"
+        },
+        {
+            "Commit": "32b715ef0d71ff4c9e61f55b09c15e75",
+            "create_time_since_epoch": 1742922387929,
+            "custom_properties_original_create_time_since_epoch": 1742921256122,
+            "custom_properties_user-metadata1": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 3,
+            "last_update_time_since_epoch": 1742922387929,
+            "name": "artifacts/parsed/train.tsv",
+            "type": "Dataset",
+            "uri": "32b715ef0d71ff4c9e61f55b09c15e75",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/32/b715ef0d71ff4c9e61f55b09c15e75",
+            "execution_type_name": "Test-env/Prepare,\n Test-env/Featurize"
+        },
+        {
+            "Commit": "6f597d341ceb7d8fbbe88859a892ef81",
+            "create_time_since_epoch": 1742922387936,
+            "custom_properties_original_create_time_since_epoch": 1742921257223,
+            "custom_properties_user-metadata1": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 4,
+            "last_update_time_since_epoch": 1742922387936,
+            "name": "artifacts/parsed/test.tsv",
+            "type": "Dataset",
+            "uri": "6f597d341ceb7d8fbbe88859a892ef81",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/6f/597d341ceb7d8fbbe88859a892ef81",
+            "execution_type_name": "Test-env/Prepare,\n Test-env/Featurize"
+        },
+        {
+            "Commit": "f0df2c2523f036b3acbed38e0b9f6baf",
+            "create_time_since_epoch": 1742922387967,
+            "custom_properties_original_create_time_since_epoch": 1742921286119,
+            "custom_properties_user-metadata1": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 5,
+            "last_update_time_since_epoch": 1742922387967,
+            "name": "artifacts/features/train.pkl",
+            "type": "Dataset",
+            "uri": "f0df2c2523f036b3acbed38e0b9f6baf",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/f0/df2c2523f036b3acbed38e0b9f6baf",
+            "execution_type_name": "Test-env/Prepare,\n Test-env/Featurize,\n Test-env/Train"
+        },
+        {
+            "Commit": "b0b1541826abc7c82d2d3dd9b3a614db",
+            "create_time_since_epoch": 1742922387973,
+            "custom_properties_original_create_time_since_epoch": 1742921287388,
+            "custom_properties_user-metadata1": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 6,
+            "last_update_time_since_epoch": 1742922387973,
+            "name": "artifacts/features/test.pkl",
+            "type": "Dataset",
+            "uri": "b0b1541826abc7c82d2d3dd9b3a614db",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/b0/b1541826abc7c82d2d3dd9b3a614db",
+            "execution_type_name": "Test-env/Prepare,\n Test-env/Featurize,\n Test-env/Train,\n Test-env/Evaluate"
+        }
+    ]
+}
+Artifact Lineage Tree for Test-env:
+[
+    [
+        {
+            "id": "data.xml.gz:236d",
+            "parents": []
+        }
+    ],
+    [
+        {
+            "id": "train.tsv:32b7",
+            "parents": [
+                "data.xml.gz:236d"
+            ]
+        },
+        {
+            "id": "test.tsv:6f59",
+            "parents": [
+                "data.xml.gz:236d"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "train.pkl:f0df",
+            "parents": [
+                "train.tsv:32b7",
+                "test.tsv:6f59"
+            ]
+        },
+        {
+            "id": "test.pkl:b0b1",
+            "parents": [
+                "train.tsv:32b7",
+                "test.tsv:6f59"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "ef85ce0a-0998-11f0-925c-38eaa715aca4/metrics/training_metrics:2cc7:3:f744",
+            "parents": [
+                "train.pkl:f0df"
+            ]
+        },
+        {
+            "id": "model.pkl:a2d7",
+            "parents": [
+                "train.pkl:f0df"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "metrics:fef5:5",
+            "parents": [
+                "model.pkl:a2d7",
+                "test.pkl:b0b1"
+            ]
+        }
+    ]
+]
+Selected Execution UUID (First 4 characters): 4af4
+Execution Lineage Tree for UUID 4af4 and Pipeline Test-env:
+[
+    [
+        {
+            "id": "Prepare_4af4",
+            "parents": []
+        }
+    ]
+]

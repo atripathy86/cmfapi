@@ -1,7 +1,9 @@
 import json 
 
 from cmfapi import cmfClient
-client = cmfClient("http://192.168.2.143:8080")
+#client = cmfClient("http://192.168.2.143:8080")
+client = cmfClient("http://10.152.217.132:8080")
+#client = cmfClient("http://10.152.216.209:8080")
 
 #Get Pipelines in DB
 pipelines = client.get_pipelines()
