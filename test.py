@@ -63,11 +63,22 @@ print(f"Execution Lineage Tree for UUID {uuid} and Pipeline {pipeline_name}:")
 print(json.dumps(execution_lineage_tree, indent=4))
 
 #Get Model Card
-# model_card = client.get_model_card()
-# print("Model Card:")
-# print(json.dumps(model_card, indent=4))
+#First fetch all artifacts of type "Model" for the first pipeline
+model_artifacts = client.get_artifacts(first_pipeline, "Model")
+print(f"Artifacts for {first_pipeline} of type Model:")
+print(json.dumps(model_artifacts, indent=4))
+#Select a particular model artifact
+if model_artifacts and "items" in model_artifacts and len(model_artifacts["items"]) > 0:
+    first_model_artifact = model_artifacts["items"][0]  # Get the first model artifact item
+    model_id = first_model_artifact["id"]  # Access the id field of Artifact "Model"
+    print(f"Selected Model ID: {model_id}")
+#model_id = "8"  # Replace with the actual model ID
+model_card = client.get_model_card(model_id)
+print("Model Card:")
+print(json.dumps(model_card, indent=4))
 
-#Get Python Environment 
+#Get Python Environment
+# This needs a file_name of type .txt or .yaml as string argument  
 # python_env = client.get_python_env()
 # print("Python Environment Details:")
 # print(python_env)

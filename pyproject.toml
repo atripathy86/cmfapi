@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cmfapi"
-version = "0.0.1"
+version = "0.0.2"
 description = "Python API Client for CMF"
 authors = [{name = "Aalap Tripathy", email = "atripathy.bulk@gmail.com"}]
 license = {text = "Apache"}

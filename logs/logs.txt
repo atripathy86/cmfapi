@@ -550,3 +550,145 @@ Execution Lineage Tree for UUID 4af4 and Pipeline Test-env:
         }
     ]
 ]
+
+Artifacts for Test-env of type Model:
+{
+    "total_items": 1,
+    "items": [
+        {
+            "Commit": "a2d71c71a0b99c467ab94f4767e3a0a9",
+            "create_time_since_epoch": 1742922388009,
+            "custom_properties_original_create_time_since_epoch": 1742921305009,
+            "id": 8,
+            "last_update_time_since_epoch": 1742922388009,
+            "model_framework": "SKlearn",
+            "model_name": "RandomForestClassifier:default",
+            "model_type": "RandomForestClassifier",
+            "name": "artifacts/model/model.pkl",
+            "type": "Model",
+            "uri": "a2d71c71a0b99c467ab94f4767e3a0a9",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/a2/d71c71a0b99c467ab94f4767e3a0a9",
+            "execution_type_name": "Test-env/Train,\n Test-env/Evaluate"
+        }
+    ]
+}
+Selected Model ID: 8
+Model Card:
+[
+    [
+        {
+            "Commit": "a2d71c71a0b99c467ab94f4767e3a0a9",
+            "create_time_since_epoch": 1742922388009,
+            "custom_properties_original_create_time_since_epoch": 1742921305009,
+            "id": 8,
+            "last_update_time_since_epoch": 1742922388009,
+            "model_framework": "SKlearn",
+            "model_name": "RandomForestClassifier:default",
+            "model_type": "RandomForestClassifier",
+            "name": "artifacts/model/model.pkl:a2d71c71a0b99c467ab94f4767e3a0a9:4",
+            "type": "Model",
+            "uri": "a2d71c71a0b99c467ab94f4767e3a0a9",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/a2/d71c71a0b99c467ab94f4767e3a0a9"
+        }
+    ],
+    [
+        {
+            "Context_ID": 4,
+            "Context_Type": "Test-env/Train",
+            "Execution": "['src/train.py', 'artifacts/features', 'artifacts/model']",
+            "Execution_type_name": "Test-env/Train",
+            "Execution_uuid": "ef85ce0a-0998-11f0-925c-38eaa715aca4",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_min_split": 64.0,
+            "custom_properties_n_est": 100.0,
+            "custom_properties_original_create_time_since_epoch": 1742921290664,
+            "custom_properties_seed": 20170428.0
+        },
+        {
+            "Context_ID": 5,
+            "Context_Type": "Test-env/Evaluate",
+            "Execution": "['src/test.py', 'artifacts/model', 'artifacts/features', 'artifacts/test_results']",
+            "Execution_type_name": "Test-env/Evaluate",
+            "Execution_uuid": "f9efc45e-0998-11f0-aec0-38eaa715aca4",
+            "Git_Repo": "git@github.com:atripathy86/experiment-repo.git",
+            "Pipeline_Type": "Test-env",
+            "Pipeline_id": 1,
+            "custom_properties_Python_Env": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml",
+            "custom_properties_min_split": null,
+            "custom_properties_n_est": null,
+            "custom_properties_original_create_time_since_epoch": 1742921308136,
+            "custom_properties_seed": null
+        }
+    ],
+    [
+        {
+            "Commit": "2bda4ca0c3ba6a7f4338a7ebbcc5e82e",
+            "create_time_since_epoch": 1742922387915,
+            "custom_properties_original_create_time_since_epoch": null,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 1,
+            "last_update_time_since_epoch": 1742922387915,
+            "name": "cmf_artifacts/python_env_2bda4ca0c3ba6a7f4338a7ebbcc5e82e.yaml:2bda4ca0c3ba6a7f4338a7ebbcc5e82e",
+            "type": "Environment",
+            "uri": "2bda4ca0c3ba6a7f4338a7ebbcc5e82e",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/2b/da4ca0c3ba6a7f4338a7ebbcc5e82e"
+        },
+        {
+            "Commit": "f0df2c2523f036b3acbed38e0b9f6baf",
+            "create_time_since_epoch": 1742922387967,
+            "custom_properties_original_create_time_since_epoch": 1742921286119.0,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 5,
+            "last_update_time_since_epoch": 1742922387967,
+            "name": "artifacts/features/train.pkl:f0df2c2523f036b3acbed38e0b9f6baf",
+            "type": "Dataset",
+            "uri": "f0df2c2523f036b3acbed38e0b9f6baf",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/f0/df2c2523f036b3acbed38e0b9f6baf"
+        },
+        {
+            "Commit": "b0b1541826abc7c82d2d3dd9b3a614db",
+            "create_time_since_epoch": 1742922387973,
+            "custom_properties_original_create_time_since_epoch": 1742921287388.0,
+            "git_repo": "git@github.com:atripathy86/experiment-repo.git",
+            "id": 6,
+            "last_update_time_since_epoch": 1742922387973,
+            "name": "artifacts/features/test.pkl:b0b1541826abc7c82d2d3dd9b3a614db",
+            "type": "Dataset",
+            "uri": "b0b1541826abc7c82d2d3dd9b3a614db",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/b0/b1541826abc7c82d2d3dd9b3a614db"
+        }
+    ],
+    [
+        {
+            "Commit": "2cc736584d8b8eeee702816411a70ba9",
+            "create_time_since_epoch": 1742922388002,
+            "custom_properties_avg_prec": null,
+            "custom_properties_original_create_time_since_epoch": 1742921303661,
+            "custom_properties_roc_auc": null,
+            "id": 7,
+            "last_update_time_since_epoch": 1742922388002,
+            "metrics_name": null,
+            "name": "cmf_artifacts/ef85ce0a-0998-11f0-925c-38eaa715aca4/metrics/training_metrics:2cc736584d8b8eeee702816411a70ba9:3:f7441e26-0998-11f0-925c-38eaa715aca4",
+            "type": "Step_Metrics",
+            "uri": "2cc736584d8b8eeee702816411a70ba9",
+            "url": "Test-env:/tmp/cmf/example_get_started/dvc_remote/files/md5/2c/c736584d8b8eeee702816411a70ba9"
+        },
+        {
+            "Commit": null,
+            "create_time_since_epoch": 1742922388039,
+            "custom_properties_avg_prec": 0.584079,
+            "custom_properties_original_create_time_since_epoch": 1742921316569,
+            "custom_properties_roc_auc": 0.953873,
+            "id": 9,
+            "last_update_time_since_epoch": 1742922388039,
+            "metrics_name": "metrics:fef579b2-0998-11f0-aec0-38eaa715aca4:4",
+            "name": "metrics:fef579b2-0998-11f0-aec0-38eaa715aca4:5",
+            "type": "Metrics",
+            "uri": "fef579b2-0998-11f0-aec0-38eaa715aca4",
+            "url": null
+        }
+    ]
+]

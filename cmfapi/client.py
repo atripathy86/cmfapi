@@ -74,13 +74,14 @@ class cmfClient:
         """
         return self.connection.get(f"/execution-lineage/tangled-tree/{uuid}/{pipeline_name}")
 
-    def get_model_card(self):
+    def get_model_card(self, model_id):
         """
         Retrieve the model card information.
-
+        :param model_id: Unique identifier for the model (as int).
         :return: API response containing the model card details.
         """
-        return self.connection.get("/model-card")
+        model_id_int = int(model_id)
+        return self.connection.get("/model-card", params={"modelId": model_id_int})
 
     def get_python_env(self):
         """
@@ -88,7 +89,9 @@ class cmfClient:
 
         :return: API response containing the Python environment details as plain text.
         """
-        return self.connection.get("/python-env", headers={"Accept": "text/plain"})
+        return self.connection.get("/python-env")
+        #headers={"Accept": "text/plain"}
+    
 
     def mlmd_push(self, payload):
         """

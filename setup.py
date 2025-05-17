@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cmfapi",
-    version="0.0.1",
+    version="0.0.2",
     description="A client library for interacting with the CMF API",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
